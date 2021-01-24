@@ -27,12 +27,12 @@ export default {
         var pi=3.1415926;
 
         p5.setup = () => {
-            p5.createCanvas(w, h, p5.WEBGL);
+            p5.createCanvas(w, h, WEBGL);
         };
 
         p5.draw = () => {
             // p5.background(0);
-            background(220); 
+            p5.background(220); 
             for(var i=35;i>0;i--)
             {
               if(i%2==0)

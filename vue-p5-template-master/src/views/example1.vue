@@ -34,13 +34,13 @@ export default {
             p5.background(220);
             p5.imageMode(CENTER);
             p5.image(img,200,200);
-            let t = p5.frameCount / 60; 
+            let t = frameCount / 60; 
             for (let i = 0; i < p5.random(5); i++) {
-              p5.snowflakes.push(new p5.snowflake()); 
+              snowflakes.push(new p5.snowflake()); 
             }
-            for (let flake of p5.snowflakes) {
-              flake.update(t); 
-              flake.display(); 
+            for (let flake of snowflakes) {
+              flake.p5.update(t); 
+              flake.p5.display(); 
             }
 
         };

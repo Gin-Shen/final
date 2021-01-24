@@ -22,14 +22,14 @@ export default {
         // let h = window.innerHeight;
 
         p5.setup = () => {
-            p5.createCanvas(w, h, p5.WEBGL);
+            p5.createCanvas(w, h, WEBGL);
         };
 
         p5.draw = () => {
             p5.background('#1D2D44');
             p5.rotateX(frameCount * 0.02);
             p5.rotateY(frameCount * 0.02);
-            let c  = color('#748CAB');
+            let c  = p5.color('#748CAB');
             p5.fill(c);
             p5.sphere(150);
             

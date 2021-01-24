@@ -22,7 +22,7 @@ export default {
         // let h = window.innerHeight;
 
         p5.setup = () => {
-            p5.createCanvas(w, h, p5.WEBGL);
+            p5.createCanvas(w, h, WEBGL);
             p5.noStroke();
         };
 
@@ -43,8 +43,8 @@ export default {
         var xi;
         var yi;
         var radius = interval *15;
-        xi = 0.01*radius * p5.Math.cos(t * p5.Math.PI/180);
-        yi = 0.01*radius * p5.Math.sin(t * p5.Math.PI/180); 
+        xi = 0.01*radius * p5.Math.cos(t * Math.PI/180);
+        yi = 0.01*radius * p5.Math.sin(t * Math.PI/180); 
         x += xi;
         y += yi;
         p5.ellipse(x, y, 20,20);
